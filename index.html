@@ -78,7 +78,7 @@
 <main>
 
 <h1>Sponti</h1>
-<p class="lead">Datenschutzerklärung und Impressum. Stand: 23. September 2026</p>
+<p class="lead">Datenschutzerklärung und Impressum. Stand: 01. Oktober 2026</p>
 
 <nav>
   <a href="#datenschutz">Datenschutzerklärung</a>
@@ -98,14 +98,13 @@ E-Mail: <a href="mailto:marcel.bockel13@gmail.com">marcel.bockel13@gmail.com</a>
 
 <h3>2. Worum es bei Sponti geht</h3>
 <p>Sponti ist eine App, mit der du deinen Freundinnen und Freunden zeigen kannst, wann du Zeit hast, und mit der ihr daraus gemeinsame Pläne macht. Die App richtet sich ausschließlich an bestehende Freundeskreise. Es gibt keinen öffentlichen Bereich und keine Vorschläge fremder Personen.</p>
-<p>Sponti befindet sich derzeit in einer geschlossenen Testphase mit einem kleinen Kreis von Testnutzerinnen und Testnutzern.</p>
 
 <h3>3. Welche Daten verarbeitet werden</h3>
 <div class="wrap">
 <table>
   <tr><th>Daten</th><th>Zweck</th><th>Rechtsgrundlage</th></tr>
   <tr>
-    <td>Konto: Nutzerkennung, Anmeldung über Apple (Name, sofern freigegeben), Zeitpunkt der Erstellung</td>
+    <td>Konto: Nutzerkennung, Anmeldung über Apple (Name, sofern freigegeben; eine E-Mail-Adresse wird nicht abgefragt), Zeitpunkt der Erstellung</td>
     <td>Anmeldung und Zuordnung deiner Inhalte</td>
     <td>Art. 6 Abs. 1 lit. b DSGVO (Vertrag)</td>
   </tr>
@@ -130,9 +129,19 @@ E-Mail: <a href="mailto:marcel.bockel13@gmail.com">marcel.bockel13@gmail.com</a>
     <td>Art. 6 Abs. 1 lit. b DSGVO</td>
   </tr>
   <tr>
-    <td>Ungefährer Ort: auf Stadt- bzw. Viertel-Ebene gerundete Koordinaten, Ortsname</td>
+    <td>Ungefährer Ort: auf Stadt- bzw. Viertel-Ebene gerundete Koordinaten, Ortsname; dein Heimatort</td>
     <td>Nur Freunde in der Nähe anzeigen, Entfernungen grob schätzen</td>
     <td>Art. 6 Abs. 1 lit. a DSGVO (Einwilligung über die Systemabfrage)</td>
+  </tr>
+  <tr>
+    <td>Reisen und „Unterwegs“: grobes Reiseziel, Zeitraum, ob Freunde dort Bescheid bekommen sollen</td>
+    <td>Während einer Reise den richtigen Ort zeigen; Freunden in der Nähe des Reiseziels Bescheid sagen, wenn du das eingeschaltet hast</td>
+    <td>Art. 6 Abs. 1 lit. b DSGVO</td>
+  </tr>
+  <tr>
+    <td>Interessen: Gewichtung von Kategorien wie Essen, Aktiv, Kultur oder Draußen – von dir gewählt und aus deiner Nutzung gelernt (Pläne erstellen, beitreten, ausblenden)</td>
+    <td>Passende Vorschläge, wenn ihr gemeinsam Zeit habt. Andere sehen nie deine Gewichte, nur die fertigen Vorschläge.</td>
+    <td>Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an passenden Vorschlägen)</td>
   </tr>
   <tr>
     <td>Mitteilungen: Gerätetoken, Einstellungen, Protokoll versendeter und unterdrückter Mitteilungen</td>
@@ -145,6 +154,16 @@ E-Mail: <a href="mailto:marcel.bockel13@gmail.com">marcel.bockel13@gmail.com</a>
     <td>Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer brauchbaren App)</td>
   </tr>
   <tr>
+    <td>Blockierungen: wen du blockiert hast</td>
+    <td>Damit ihr gegenseitig keine Pläne, Zeitfenster und Mitteilungen mehr voneinander bekommt</td>
+    <td>Art. 6 Abs. 1 lit. b DSGVO</td>
+  </tr>
+  <tr>
+    <td>Meldungen: wer meldet, wer gemeldet wird, der optionale Grund</td>
+    <td>Hinweisen auf unangemessenes Verhalten nachgehen</td>
+    <td>Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer sicheren App)</td>
+  </tr>
+  <tr>
     <td>Feedback: dein Text, Kategorie, Bildschirm, App- und iOS-Version, Gerätemodell</td>
     <td>Fehler finden und die App verbessern</td>
     <td>Art. 6 Abs. 1 lit. f DSGVO, bei Kontaktwunsch lit. a</td>
@@ -155,7 +174,7 @@ E-Mail: <a href="mailto:marcel.bockel13@gmail.com">marcel.bockel13@gmail.com</a>
     <td>Art. 6 Abs. 1 lit. f DSGVO</td>
   </tr>
   <tr>
-    <td>Nutzungsstatistik: anonyme Ereignisse wie „Plan erstellt“ oder „beigetreten“, ohne Inhalte, Namen oder Orte</td>
+    <td>Nutzungsstatistik: pseudonyme Ereignisse wie „Plan erstellt“ oder „beigetreten“, verknüpft mit einer zufälligen Gerätekennung von Firebase Analytics, nicht mit deinem Konto; ohne Inhalte, Namen oder Orte</td>
     <td>Verstehen, welche Funktionen genutzt werden</td>
     <td>Art. 6 Abs. 1 lit. f DSGVO</td>
   </tr>
@@ -167,26 +186,28 @@ E-Mail: <a href="mailto:marcel.bockel13@gmail.com">marcel.bockel13@gmail.com</a>
 <ul>
   <li><strong>Mitglieder deiner Gruppen</strong> sehen deinen Namen, deine Verfügbarkeit und deine Pläne, soweit du sie für sie sichtbar gemacht hast.</li>
   <li><strong>Ausgewählte Personen:</strong> Wenn du einen Plan oder ein Zeitfenster nur für bestimmte Leute freigibst, sehen nur diese ihn.</li>
-  <li><strong>Der genaue Standort wird nie geteilt.</strong> Andere sehen höchstens einen Ortsnamen und eine grobe Entfernung.</li>
-  <li><strong>Private Angaben</strong> wie Benachrichtigungseinstellungen, gespeicherte Personenauswahlen, ausgeblendete Pläne und dein Heimatort sind für niemanden außer dir sichtbar.</li>
+  <li><strong>Blockierte Personen</strong> sehen deine Pläne, Zeitfenster und Reisen nicht mehr, und du ihre nicht. Sie erfahren nicht, dass du sie blockiert hast. Auch wer gemeldet wird, erfährt davon nichts.</li>
+  <li><strong>Der genaue Standort wird nie geteilt.</strong> Andere sehen höchstens einen Ortsnamen und eine grobe Entfernung. Geplante Reisen sieht niemand vorher, außer du lässt Freunde dort Bescheid bekommen.</li>
+  <li><strong>Private Angaben</strong> wie Benachrichtigungseinstellungen, Interessen, gespeicherte Personenauswahlen, Blockierungen, ausgeblendete Pläne und dein Heimatort sind für niemanden außer dir sichtbar.</li>
 </ul>
 
 <h3>5. Dienstleister</h3>
 <p>Für Betrieb und Speicherung wird Google Firebase eingesetzt (Anbieter: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland). Genutzt werden Firebase Authentication, Cloud Firestore, Cloud Functions, Cloud Messaging, Crashlytics und Analytics. Mit Google besteht ein Auftragsverarbeitungsvertrag nach Art. 28 DSGVO.</p>
 <p>Die Daten werden vorrangig in Rechenzentren in der Europäischen Union verarbeitet. Eine Übermittlung in die USA kann nicht vollständig ausgeschlossen werden; sie stützt sich auf die Standardvertragsklauseln der EU-Kommission sowie auf die Zertifizierung von Google LLC unter dem EU-US Data Privacy Framework.</p>
-<p>Push-Mitteilungen werden über den Dienst Apple Push Notification service zugestellt (Apple Distribution International Ltd., Hollyhill Industrial Estate, Cork, Irland). In der Testphase erfolgt die Verteilung der App über Apple TestFlight.</p>
+<p>Push-Mitteilungen werden über den Dienst Apple Push Notification service zugestellt (Apple Distribution International Ltd., Hollyhill Industrial Estate, Cork, Irland). Die App wird über den App Store verteilt, Vorabversionen über Apple TestFlight.</p>
 
 <h3>6. Speicherdauer</h3>
 <ul>
-  <li>Pläne laufen automatisch ab und werden anschließend gelöscht.</li>
+  <li>Pläne werden kurz nach ihrem Ablauf gelöscht. Übrig bleibt nur eine anonyme Zählung, wie viele Pläne es an einem Tag gab.</li>
   <li>Verfügbarkeiten gelten höchstens bis zum Folgetag.</li>
+  <li>Vergangene Reisen werden einen Tag nach ihrem Ende gelöscht.</li>
   <li>Das Mitteilungsprotokoll wird nach sieben Tagen gelöscht.</li>
-  <li>Konto, Profil und Gruppenzugehörigkeiten bleiben bestehen, bis du dein Konto löschst.</li>
-  <li>Feedback wird gespeichert, bis es ausgewertet ist, längstens bis zum Ende der Testphase.</li>
+  <li>Konto, Profil, Interessen, Blockierungen und Gruppenzugehörigkeiten bleiben bestehen, bis du sie änderst oder dein Konto löschst.</li>
+  <li>Feedback und Meldungen werden gespeichert, bis sie bearbeitet sind, und beim Löschen deines Kontos mit gelöscht.</li>
 </ul>
 
 <h3>7. Konto löschen</h3>
-<p>Du kannst dein Konto jederzeit in der App löschen: Einstellungen, ganz unten „Konto löschen“. Dabei werden dein Profil, deine Zeitfenster, deine eigenen Pläne und deine Teilnahmen entfernt und du wirst aus allen Gruppen ausgetragen. Alternativ genügt eine E-Mail an die oben genannte Adresse.</p>
+<p>Du kannst dein Konto jederzeit in der App löschen: Einstellungen, ganz unten „Konto löschen“. Dabei werden dein Profil, deine Zeitfenster, Reisen und Interessen, deine eigenen Pläne und deine Teilnahmen, deine Blockierungen sowie dein Feedback und deine Meldungen entfernt, du wirst aus allen Gruppen ausgetragen, und die Anmeldung über Apple wird widerrufen. Meldungen anderer über dich bleiben bestehen, bis sie bearbeitet sind. Alternativ genügt eine E-Mail an die oben genannte Adresse.</p>
 
 <h3>8. Deine Rechte</h3>
 <p>Du hast das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21). Erteilte Einwilligungen kannst du jederzeit mit Wirkung für die Zukunft widerrufen, etwa indem du den Standortzugriff oder die Mitteilungen in den iOS-Einstellungen deaktivierst.</p>
@@ -213,8 +234,7 @@ E-Mail: <a href="mailto:marcel.bockel13@gmail.com">marcel.bockel13@gmail.com</a>
 <p><strong>Verbraucherstreitbeilegung:</strong> Ich bin nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
 
 <hr>
-<p class="muted">Sponti ist ein privates Projekt und befindet sich in einer geschlossenen Testphase.</p>
-
+<p class="muted">Sponti ist ein privates Projekt.</p>
 </main>
 </body>
 </html>
